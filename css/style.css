@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0px;
   padding: 0px;
@@ -9,5 +10,39 @@
 
 header {
   padding: 10px;
+}
+
+/*Class para hacer flex todo el contenedor*/
+.container-flex {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/*Class para cambiar orientación ROW del menu y crear espacio entre Ancors */
+.menu-orientation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul a {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

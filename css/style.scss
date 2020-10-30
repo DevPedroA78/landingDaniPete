@@ -18,6 +18,29 @@ header {
     padding: 10px;
 }
 
+/*Class para hacer flex todo el contenedor*/
+.container-flex {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*Class para cambiar orientación ROW del menu y crear espacio entre Ancors */
+.menu-orientation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul a {
+    align-items: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
 @mixin styleButton {
     height: 50px;
     width: 100px;
