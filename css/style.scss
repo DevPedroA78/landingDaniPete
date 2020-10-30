@@ -4,3 +4,19 @@ $dark-blue3: hsl(216, 53%, 9%);
 $dark-blue: hsl(219, 30%, 18%);
 $accent-cyan: hsl(176, 68%, 64%);
 $accent-blue: hsl(198, 60%, 50%);
+$neutral-white: hsl(0, 0%, 100%);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@mixin styleButton {
+    height: 50px;
+    width: 100px;
+    background-color: $accent-blue;
+    border: none;
+    border-radius: 50px;
+    color: $neutral-white;
+}
