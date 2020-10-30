@@ -10,6 +10,12 @@ $neutral-white: hsl(0, 0%, 100%);
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    background-color: black;
+    color: $neutral-white;
+}
+
+header {
+    padding: 10px;
 }
 
 @mixin styleButton {
