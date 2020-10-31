@@ -36,8 +36,10 @@ header {
     align-items: center;
 }
 
-header nav ul li a {
+nav ul li a {
     list-style: none;
+    text-decoration: none;
+    text-align: center;
 }
 
 body {
