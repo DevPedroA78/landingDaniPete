@@ -10,7 +10,7 @@ $neutral-white: hsl(0, 0%, 100%);
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color: black;
+    background-color:$dark-blue1;
     color: $neutral-white;
 }
 
@@ -19,9 +19,13 @@ header {
 }
 
 /*Class para hacer flex todo el contenedor*/
-.container-flex {
-    max-width: 1440px;
-    margin: 0 auto;
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
 }
 
 /*Class para cambiar orientación ROW del menu y crear espacio entre Ancors */
@@ -32,8 +36,8 @@ header {
     align-items: center;
 }
 
-header nav ul a {
-    align-items: center;
+header nav ul li a {
+    list-style: none;
 }
 
 body {
