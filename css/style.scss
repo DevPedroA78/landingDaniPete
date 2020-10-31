@@ -6,6 +6,11 @@ $accent-cyan: hsl(176, 68%, 64%);
 $accent-blue: hsl(198, 60%, 50%);
 $neutral-white: hsl(0, 0%, 100%);
 
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -42,10 +47,7 @@ nav ul li a {
     text-align: center;
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-}
+
 
 @mixin styleButton {
     height: 50px;
