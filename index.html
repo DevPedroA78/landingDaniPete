@@ -8,7 +8,7 @@
     <title>Landing Page Challenge - Daniel / Pete</title>
 </head>
 <body>
-    <header class="container">
+    <header class="container1">
         <img src="images/logo.svg" alt="Fylo Logotipo">
         <nav class="menu-orientation">
             <ul>
@@ -18,9 +18,9 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main-inlineflex">
         <!-- Principal con imagen, H1 y CTA degradado -->
-        <div>
+        <div class="div-imagenIntro">
             <img src="images/illustration-intro.png" alt="Secure location">
             <h1>All your files in one secure location, accessible anywhare.</h1>
             <p>Fylo store all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and coworkers.</p>
@@ -28,7 +28,7 @@
         </div>
     
     <!-- Aqui va la seccion y divs para los botones y servicios -->
-    <section>
+    <section class="container2-services">
         <div>
             <img src="images/icon-access-anywhere.svg" alt="Access files">
             <h3>Access your files, anywhare</h3>
@@ -53,49 +53,45 @@
     </main>
 
     <!-- AQUI VAN LOS ASIDE Y ARTICLES -->
-    <section>
+    <section class="container3-productive">
         <img src="images/illustration-stay-productive.png" width="300" alt="Productividad">
+        <aside class="aside-information">
+            <h2>Stay productive,<br> wherever you are</h2>
+            <p>Never let location be an issue when accessing your files. Fylo has you <br> covered for all of you file storage needs</p>
+            <p>Securely share file and folders with friens, family and colleages for live <br> collaboration. No email attachments required</p>
+            <p>See how Fylo works</p>
+        </aside>
     </section>
-        
-    <aside>
-        <h2>Stay productive,<br> wherever you are</h2>
-        <p>Never let location be an issue when accessing your files. Fylo has you <br> covered for all of you file storage needs</p>
-        <p>Securely share file and folders with friens, family and colleages for live <br> collaboration. No email attachments required</p>
-        <p>See how Fylo works</p>
-    </aside>
 
-    <section>
-        <div class="container-flex">
-            <div class="square item-1">
-                <p>Fylo has improved our    team productivity by an order of magnitude. Since making the switch our team has become a well-iolled  collaboration machine.</p>
+    <section class="container4-testimonios">
+            <div class="square-item1">
+                <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-iolled  collaboration machine.</p>
                 <img src="images/profile-1.jpg" width="30" alt="">
                 <p>Satish Patel</p>
                 <p>Founder & CEO Huddle</p>
-         
-             <div class="square item-2">
+            </div>
+             <div class="square-item2">
                 <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-iolled collaboration machine.</p>
                 <img src="images/profile-2.jpg" width="30" alt="">
                 <p>Bruce McKenzie</p>
                 <p>Founder & CEO Huddle</p>
              </div>
-             <div class="square item-3">
+             <div class="square-item3">
                 <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-iolled collaboration machine.</p>
                 <img src="images/profile-3.jpg" width="30" alt="">
                 <p>Iva Boyd</p>
                 <p>Founder & CEO Huddle</p>
               </div>
-            </div>
-        </div>
     </section>
 
     <!-- Aqui va el Form -->
-    <section>
+    <section class="container5-form">
         <form action="">
             <h2>Get early access today</h2>
             <div>
                 <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
             </div>
-            <div>
+            <div class="container5-item1">
                 <label for="">Email</label>
                 <input type="email" placeholder="email@example.com">
                 <button>Get Started For Free</button>
@@ -104,25 +100,32 @@
     </section>
     
     <!-- AQUI VA EL FOOTER -->
-    <footer>
+    <footer class="container6-footerLogo">
         <img src="images/logo.svg" alt="">
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores aperiam repellat provident ex! Voluptas sit, expedita debitis veritatis</p> 
-        </div>
-        <div>
-            <p>+1-543-123-4567</p>
-            <p>example@fylo.com</p>
-        </div>
-        <div>
-            <ul>
-                <li>About Us</li>
-                <li>Jobs</li>
-                <li>Press</li>
-                <li>Blog</li>
-                <li>Contact Us</li>
-                <li>Terms</li>
-                <li>Privacy</li>
-            </ul>
+        <div class="container7-contact">
+            <div>
+                <img src="images/icon-location.svg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit asperiores aperiam repellat provident ex! Voluptas sit, expedita debitis veritatis</p> 
+            </div>
+            <div>
+                <img src="images/icon-phone.svg" alt="">
+                <p>+1-543-123-4567</p>
+                <img src="images/icon-email.svg" alt="">
+                <p>example@fylo.com</p>
+            </div>
+            <div>
+                <ul>
+                    <li>About Us</li>
+                    <li>Jobs</li>
+                    <li>Press</li>
+                    <li>Blog</li>
+                </ul>
+                <ul>
+                    <li>Contact Us</li>
+                    <li>Terms</li>
+                    <li>Privacy</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
