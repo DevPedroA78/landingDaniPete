@@ -1,0 +1,28 @@
+
+header {
+    padding: 10px;
+}
+
+/*Class para hacer flex todo el contenedor*/
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+/*Class para cambiar orientación ROW del menu y crear espacio entre Ancors */
+.menu-orientation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a {
+    list-style: none;
+    text-decoration: none;
+    text-align: center;
+}

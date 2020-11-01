@@ -1,53 +1,13 @@
-$dark-blue1: hsl(217, 28%, 15%);
-$dark-blue2: hsl(218, 28%, 13%);
-$dark-blue3: hsl(216, 53%, 9%);
-$dark-blue: hsl(219, 30%, 18%);
-$accent-cyan: hsl(176, 68%, 64%);
-$accent-blue: hsl(198, 60%, 50%);
-$neutral-white: hsl(0, 0%, 100%);
-
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-family: 'Raleway', sans-serif;
-}
+@import 'variables';
+@import 'header';
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color:$dark-blue1;
+    background-color:   $dark-blue1;
     color: $neutral-white;
 }
-
-header {
-    padding: 10px;
-}
-
-/*Class para hacer flex todo el contenedor*/
-.container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
-}
-
-/*Class para cambiar orientación ROW del menu y crear espacio entre Ancors */
-.menu-orientation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul li a {
-    list-style: none;
-    text-decoration: none;
-    text-align: center;
-}
-
-
 
 @mixin styleButton {
     height: 50px;
