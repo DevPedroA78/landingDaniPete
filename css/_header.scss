@@ -28,6 +28,7 @@ nav div ul li a {
 
 /*Clase para CENTRAR el bloque de imagen contexto H1, danda Espaciado 20px alrededor*/
 .main-inlineflex {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

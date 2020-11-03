@@ -46,6 +46,9 @@ nav div ul li a {
 
 /*Clase para CENTRAR el bloque de imagen contexto H1, danda Espaciado 20px alrededor*/
 .main-inlineflex {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -56,9 +59,7 @@ nav div ul li a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 20px;
 }
 
@@ -119,5 +120,40 @@ nav div ul li a {
           box-sizing: border-box;
   background-color: #1c2431;
   color: white;
+}
+
+.container2-services {
+  border: 1px solid purple;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*div {
+        padding: 10px;
+        article {
+            border: 1px solid red;
+            padding: 20px;
+        }
+    }*/
+}
+
+.container2-services .container2-ab {
+  border: 1px solid red;
+  padding: 10px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+}
+
+.container2-services .container2-cd {
+  border: 1px solid yellow;
+  padding: 10px;
+  /*display: flex;*/
+  /*flex-direction: column;*/
 }
 /*# sourceMappingURL=style.css.map */
