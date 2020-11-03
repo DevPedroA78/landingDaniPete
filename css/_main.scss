@@ -1,0 +1,28 @@
+.container2-services {
+    border: 1px solid purple;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    .container2-ab {
+        border: 1px solid red;
+        padding: 10px;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+    
+    .container2-cd {
+        border: 1px solid yellow;
+        padding: 10px;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+    }
+
+    /*div {
+        padding: 10px;
+        article {
+            border: 1px solid red;
+            padding: 20px;
+        }
+    }*/
+}
