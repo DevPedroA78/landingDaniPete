@@ -8,25 +8,35 @@
     <title>Landing Page Challenge - Daniel / Pete</title>
 </head>
 <body>
-    <header class="container1">
-        <img src="images/logo.svg" alt="Fylo Logotipo">
+    <header>
         <nav class="menu-orientation">
-            <ul>
-                <li><a href="">Futures</a></li>
-                <li><a href="">Team</a></li>
-                <li><a href="">Sign In</a></li>
-            </ul>
+            <div>
+                <img src="images/logo.svg" alt="Fylo Logotipo">
+            </div>
+            <div>
+                <!-- PA: creo Clase menu-flex para modificar le menu -->
+                <ul class="menu-flex">
+                    <li><a href="">Futures</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">Sign In</a></li>
+                </ul>
+            </div>
         </nav>
-    </header>
-    <main class="main-inlineflex">
-        <!-- Principal con imagen, H1 y CTA degradado -->
-        <div class="div-imagenIntro">
-            <img src="images/illustration-intro.png" alt="Secure location">
-            <h1>All your files in one secure location, accessible anywhare.</h1>
-            <p>Fylo store all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and coworkers.</p>
-            <button>Get Started</button>
+        <div class="main-inlineflex">
+            <!-- Principal con imagen, H1 y CTA degradado -->
+            <div class="div-imagenIntro">
+                <img src="images/illustration-intro.png" alt="Secure location">
+            </div>
+            <!-- PA: Creo Clase salesleyend para dar propiedades al H1, parrafo y boton -->
+            <div class="div-salesleyend">
+                <h1>All your files in one secure location, accessible anywhare.</h1>
+                <p>Fylo store all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and coworkers.</p>
+                <button class="styleButton">Get Started</button>
+            </div>
         </div>
+    </header>
     
+    <main>
     <!-- Aqui va la seccion y divs para los botones y servicios -->
     <section class="container2-services">
         <div>

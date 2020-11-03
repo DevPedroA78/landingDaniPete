@@ -1,25 +1,12 @@
-@charset "UTF-8";
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #1c2431;
-  color: white;
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
-header {
-  padding: 10px;
-}
-
-/*Class para hacer flex todo el contenedor*/
-.container-flex {
+/*Clase para cambiar orientacion lineal del contenedor, establecer ancho maximo, espacio*/
+.menu-orientation {
   max-width: 1440px;
   margin: 0 auto;
-}
-
-/*Class para cambiar orientación ROW del menu y crear espacio entre Ancors */
-.menu-orientation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,17 +17,107 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 10px;
+}
+
+/*Clase para cambiar la orientacion del menu, de columan a linea*/
+.menu-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*Elimina los bullets y da espacio de 10px en la lista*/
+nav div ul li {
+  list-style: none;
+  padding: 10px;
+}
+
+/*Elimina en underline de la lista*/
+nav div ul li a {
+  text-decoration: none;
+}
+
+/*Clase para CENTRAR el bloque de imagen contexto H1, danda Espaciado 20px alrededor*/
+.main-inlineflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 20px;
 }
 
-header nav ul li {
-  list-style: none;
+/*Clase para colocar en COLUMNA bloque con imagen y headlight, y centrar todo respecto su contenedor.*/
+.div-salesleyend {
+  border: 1px solid purple;
+  width: 60%;
+  padding: 15px;
+  padding-top: 10px;
+  padding-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*Etiqueta para personalizar el Headlight H1 en Encabezado*/
+  /*Esta etiqueta personaliza el texto del parrafo en el Encabezado*/
 }
 
-body {
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Raleway', sans-serif;
+.div-salesleyend h1 {
+  font-size: 53px;
+  color: white;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.div-salesleyend p {
+  font-size: 14px;
+  font-weight: normal;
+  padding-bottom: 15px;
+  text-align: center;
+  /*Esta propiedad funsiona solo si se elimina la fuente desde el Contenedor principal*/
+  /*color: yellow;*/
+}
+
+.styleButton {
+  width: 200px;
+  height: 50px;
+  background-color: #339ecc;
+  /*Aplica GRADIENTE LINEAL Izq a Der con los colores inidcados*/
+  background: -webkit-linear-gradient(left, #65e2d9, #339ecc);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 25px;
+  text-shadow: 0 1px 1px rgba(83, 79, 79, 0.728);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #1c2431;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

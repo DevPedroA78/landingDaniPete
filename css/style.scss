@@ -11,15 +11,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    background-color:   $dark-blue1;
+    background-color: $dark-blue1;
     color: $neutral-white;
 }
 
-@mixin styleButton {
-    height: 50px;
-    width: 100px;
-    background-color: $accent-blue;
-    border: none;
-    border-radius: 50px;
-    color: $neutral-white;
-}

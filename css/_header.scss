@@ -1,28 +1,78 @@
-
-header {
+/*Clase para cambiar orientacion lineal del contenedor, establecer ancho maximo, espacio*/
+.menu-orientation {
+    max-width: 1440px;
+    margin: 0 auto; 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 10px;
 }
 
-/*Class para hacer flex todo el contenedor*/
-.container1 {
+/*Clase para cambiar la orientacion del menu, de columan a linea*/
+.menu-flex {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: stretch;
-    align-content: stretch;
+    justify-content: space-around;
 }
 
-/*Class para cambiar orientación ROW del menu y crear espacio entre Ancors */
-.menu-orientation {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-nav ul li a {
+/*Elimina los bullets y da espacio de 10px en la lista*/
+nav div ul li {
     list-style: none;
+    padding: 10px;
+}
+
+/*Elimina en underline de la lista*/
+nav div ul li a {
     text-decoration: none;
-    text-align: center;
+}
+
+/*Clase para CENTRAR el bloque de imagen contexto H1, danda Espaciado 20px alrededor*/
+.main-inlineflex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+}
+
+/*Clase para colocar en COLUMNA bloque con imagen y headlight, y centrar todo respecto su contenedor.*/
+.div-salesleyend {
+    border: 1px solid purple;
+    width: 60%;
+    padding: 15px;
+    padding-top: 10px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /*Etiqueta para personalizar el Headlight H1 en Encabezado*/
+    h1 {
+        font-size: 53px;
+        color: $neutral-white;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    /*Esta etiqueta personaliza el texto del parrafo en el Encabezado*/
+     p {
+         font-size: 14px;
+         font-weight: normal;
+         padding-bottom: 15px;
+         text-align: center;
+         /*Esta propiedad funsiona solo si se elimina la fuente desde el Contenedor principal*/
+         /*color: yellow;*/
+     }
+}
+
+.styleButton {
+    width: 200px;
+    height: 50px;
+    background-color: $accent-blue;
+    /*Aplica GRADIENTE LINEAL Izq a Der con los colores inidcados*/
+    background: -webkit-linear-gradient(left, $accent-cyan, $accent-blue);
+    border: none;
+    border-radius: 30px;
+    color: $neutral-white;
+    font-size: 25px;
+    text-shadow: 0 1px 1px rgba(83, 79, 79, 0.728)
 }
