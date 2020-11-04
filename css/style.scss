@@ -9,8 +9,156 @@
 
 * {
     margin: 0px;
-    padding: 0px;
+    /*Comento el Padding para poder espacio en menu*/
+    /*padding: 0px;*/
     box-sizing: border-box;
-    background-color: $dark-blue1;
+    background-color: $dark-blue2;
     color: $neutral-white;
+}
+
+@media screen and (min-width: 740px){
+
+    /*Clase principal del formulario*/
+    .container5-form {
+    /*border: 1px solid red;*/
+    margin: auto;
+    border-radius: 5px;
+    background-color: $dark-blue1;
+    width: 80%;
+    height: 80%;
+    /*Flex para el contenedor de los elementos del formulario*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3%;
+
+        /*Para personaliza titulo del formulario*/
+        .flex-title2 h2 {
+        /*font-size: 100%;*/
+        background-color: $dark-blue1;
+        /*color: springgreen;*/
+        padding-bottom: 2%;
+        text-align: center;
+        }
+
+        /*Para personalizar parrafo de formulario*/
+        .flex-title2 p {
+        font-size: 83%;
+        background-color: $dark-blue1;
+        /*color: slateblue;*/
+        padding-bottom: 2%;
+        font-weight: lighter;
+        text-align: center;
+        }
+    }
+
+     /*Clase para hacer Bloque flex sobre Input y Submit*/
+    .container5-item1 {
+    /*border: 1px solid yellow;*/
+    height: 100%;
+    background-color: $dark-blue1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    justify-content: space-around;
+
+        /*Clase para personalizar Input del formulario*/
+        .stylePlaceHolder {
+        width: 100%;
+        height: 50%;
+        padding: 5px;
+        background-color: $neutral-white;
+        border: none;
+        border-radius: 30px;
+        /*color: red;*/
+        font-size: 80%;
+        text-align: center;
+        }
+
+        /*Para personalizar el Submit*/
+        .styleButtonSubmit {
+        width: 100%;
+        height: 50%;
+        background-color: $accent-blue;
+        /*Aplica GRADIENTE LINEAL Izq a Der con los colores inidcados*/
+        background: -webkit-linear-gradient(left, $accent-cyan, $accent-blue);
+        border: none;
+        border-radius: 30px;
+        color: $neutral-white;
+        font-size: 80%;
+        text-shadow: 0 1px 1px rgba(83, 79, 79, 0.728)
+        }
+
+        /*Clase para hacer flex sobre Input y Submit*/
+        .container5-item2 {
+        /*border: 1px solid greenyellow;*/
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+    }
+
+
+    /*BREAKPOINT PARA MAIN*/
+
+    .container2-services {
+        /*border: 1px solid purple;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        /*div {
+            padding: 10px;
+            article {
+                border: 1px solid red;
+                padding: 20px;
+            }
+        }*/
+    
+        .container2-ab {
+            /*border: 1px solid red;*/
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            /*Etiqueta de articulo para dar propiedades de centrado y espaciado*/
+            article {
+                text-align: center;
+                padding: 15px;
+                h3 {
+                    font-weight: bolder;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    /*font-size: 70%;*/
+                    /*color: lawngreen;*/
+                }
+            }
+        }
+        
+        .container2-cd {
+            /*border: 1px solid yellow;*/
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+            /*Etiqueta de articulo para dar propiedades de centrado y espaciado*/
+            article {
+                text-align: center;
+                padding: 15px;
+                h3 {
+                    font-weight: bolder;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+                p {
+                    /*color: red;*/
+                }
+            }
+        }
+    }
+
+
 }

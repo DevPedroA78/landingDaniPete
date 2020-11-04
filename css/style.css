@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'Open Sans', sans-serif;
   font-family: 'Raleway', sans-serif;
@@ -31,6 +32,7 @@ body {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  padding: 0;
 }
 
 /*Elimina los bullets y da espacio de 10px en la lista*/
@@ -46,9 +48,6 @@ nav div ul li a {
 
 /*Clase para CENTRAR el bloque de imagen contexto H1, danda Espaciado 20px alrededor*/
 .main-inlineflex {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,14 +58,21 @@ nav div ul li a {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 20px;
 }
 
-/*Clase para colocar en COLUMNA bloque con imagen y headlight, y centrar todo respecto su contenedor.*/
+/*Etiqueta para controlar el tamaño de la imegen*/
+header div div img {
+  width: 100%;
+}
+
+/*Clase para colocar en COLUMNA bloque con imagen y headlight y centrar todo respecto su contenedor.*/
 .div-salesleyend {
-  border: 1px solid purple;
-  width: 60%;
+  /*border: 1px solid purple;*/
+  width: 100%;
   padding: 15px;
   padding-top: 10px;
   padding-top: 10px;
@@ -85,14 +91,14 @@ nav div ul li a {
 }
 
 .div-salesleyend h1 {
-  font-size: 53px;
+  font-size: 150%;
   color: white;
   text-align: center;
   padding-bottom: 15px;
 }
 
 .div-salesleyend p {
-  font-size: 14px;
+  font-size: 90%;
   font-weight: normal;
   padding-bottom: 15px;
   text-align: center;
@@ -114,10 +120,7 @@ nav div ul li a {
 }
 
 .container2-services {
-  border: 1px solid purple;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  /*border: 1px solid purple;*/
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -125,6 +128,9 @@ nav div ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   /*div {
         padding: 10px;
         article {
@@ -135,25 +141,334 @@ nav div ul li a {
 }
 
 .container2-services .container2-ab {
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   padding: 10px;
   /*display: flex;*/
   /*flex-direction: column;*/
+  /*Etiqueta de articulo para dar propiedades de centrado y espaciado*/
+}
+
+.container2-services .container2-ab article {
+  text-align: center;
+  padding: 10px;
+}
+
+.container2-services .container2-ab article h3 {
+  font-weight: bolder;
+}
+
+.container2-services .container2-ab article p {
+  /*color: lawngreen;*/
 }
 
 .container2-services .container2-cd {
-  border: 1px solid yellow;
+  /*border: 1px solid yellow;*/
   padding: 10px;
   /*display: flex;*/
   /*flex-direction: column;*/
+  /*Etiqueta de articulo para dar propiedades de centrado y espaciado*/
+}
+
+.container2-services .container2-cd article {
+  text-align: center;
+  padding: 10px;
+}
+
+.container2-services .container2-cd article h3 {
+  font-weight: bolder;
+}
+
+.container2-services .container2-cd article p {
+  /*color: red;*/
+}
+
+/*Clase principal del formulario*/
+.container5-form {
+  /*border: 1px solid red;*/
+  margin: auto;
+  border-radius: 5px;
+  background-color: #1c2431;
+  width: 80%;
+  height: 80%;
+  /*Flex para el contenedor de los elementos del formulario*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 3%;
+  /*Para personaliza titulo del formulario*/
+  /*Para personalizar parrafo de formulario*/
+}
+
+.container5-form .flex-title2 h2 {
+  /*font-size: 100%;*/
+  background-color: #1c2431;
+  /*color: springgreen;*/
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+.container5-form .flex-title2 p {
+  font-size: 83%;
+  background-color: #1c2431;
+  /*color: slateblue;*/
+  padding-bottom: 2%;
+  font-weight: lighter;
+  text-align: center;
+}
+
+/*Clase para hacer Bloque flex sobre Input y Submit*/
+.container5-item1 {
+  /*border: 1px solid yellow;*/
+  height: 100px;
+  background-color: #1c2431;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*Clase para personalizar Input del formulario*/
+  /*Para personalizar el Submit*/
+  /*Clase para hacer flex sobre Input y Submit*/
+}
+
+.container5-item1 .stylePlaceHolder {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background-color: white;
+  border: none;
+  border-radius: 30px;
+  /*color: red;*/
+  font-size: 80%;
+  text-align: center;
+}
+
+.container5-item1 .styleButtonSubmit {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  background-color: #339ecc;
+  /*Aplica GRADIENTE LINEAL Izq a Der con los colores inidcados*/
+  background: -webkit-linear-gradient(left, #65e2d9, #339ecc);
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-size: 80%;
+  text-shadow: 0 1px 1px rgba(83, 79, 79, 0.728);
+}
+
+.container5-item1 .container5-item2 {
+  /*border: 1px solid greenyellow;*/
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 * {
   margin: 0px;
-  padding: 0px;
+  /*Comento el Padding para poder espacio en menu*/
+  /*padding: 0px;*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #1c2431;
+  background-color: #181f2a;
   color: white;
+}
+
+@media screen and (min-width: 740px) {
+  /*Clase principal del formulario*/
+  .container5-form {
+    /*border: 1px solid red;*/
+    margin: auto;
+    border-radius: 5px;
+    background-color: #1c2431;
+    width: 80%;
+    height: 80%;
+    /*Flex para el contenedor de los elementos del formulario*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3%;
+    /*Para personaliza titulo del formulario*/
+    /*Para personalizar parrafo de formulario*/
+  }
+  .container5-form .flex-title2 h2 {
+    /*font-size: 100%;*/
+    background-color: #1c2431;
+    /*color: springgreen;*/
+    padding-bottom: 2%;
+    text-align: center;
+  }
+  .container5-form .flex-title2 p {
+    font-size: 83%;
+    background-color: #1c2431;
+    /*color: slateblue;*/
+    padding-bottom: 2%;
+    font-weight: lighter;
+    text-align: center;
+  }
+  /*Clase para hacer Bloque flex sobre Input y Submit*/
+  .container5-item1 {
+    /*border: 1px solid yellow;*/
+    height: 100%;
+    background-color: #1c2431;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 5px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    /*Clase para personalizar Input del formulario*/
+    /*Para personalizar el Submit*/
+    /*Clase para hacer flex sobre Input y Submit*/
+  }
+  .container5-item1 .stylePlaceHolder {
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    /*color: red;*/
+    font-size: 80%;
+    text-align: center;
+  }
+  .container5-item1 .styleButtonSubmit {
+    width: 100%;
+    height: 50%;
+    background-color: #339ecc;
+    /*Aplica GRADIENTE LINEAL Izq a Der con los colores inidcados*/
+    background: -webkit-linear-gradient(left, #65e2d9, #339ecc);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    font-size: 80%;
+    text-shadow: 0 1px 1px rgba(83, 79, 79, 0.728);
+  }
+  .container5-item1 .container5-item2 {
+    /*border: 1px solid greenyellow;*/
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  /*BREAKPOINT PARA MAIN*/
+  .container2-services {
+    /*border: 1px solid purple;*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    /*div {
+            padding: 10px;
+            article {
+                border: 1px solid red;
+                padding: 20px;
+            }
+        }*/
+  }
+  .container2-services .container2-ab {
+    /*border: 1px solid red;*/
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /*Etiqueta de articulo para dar propiedades de centrado y espaciado*/
+  }
+  .container2-services .container2-ab article {
+    text-align: center;
+    padding: 15px;
+  }
+  .container2-services .container2-ab article h3 {
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container2-services .container2-ab article p {
+    /*font-size: 70%;*/
+    /*color: lawngreen;*/
+  }
+  .container2-services .container2-cd {
+    /*border: 1px solid yellow;*/
+    padding: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    /*Etiqueta de articulo para dar propiedades de centrado y espaciado*/
+  }
+  .container2-services .container2-cd article {
+    text-align: center;
+    padding: 15px;
+  }
+  .container2-services .container2-cd article h3 {
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .container2-services .container2-cd article p {
+    /*color: red;*/
+  }
 }
 /*# sourceMappingURL=style.css.map */

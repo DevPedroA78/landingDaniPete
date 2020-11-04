@@ -99,18 +99,29 @@
     </section>
 
     <!-- Aqui va el Form -->
+    <!-- Contendero 5 Flex para ajustar de forma general el contenedor -->
     <section class="container5-form">
-        <form action="">
-            <h2>Get early access today</h2>
-            <div>
-                <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
-            </div>
-            <div class="container5-item1">
-                <label for="">Email</label>
-                <input type="email" placeholder="email@example.com">
-                <button>Get Started For Free</button>
-            </div>
-        </form>
+        <div>
+            <form action="">
+                <!-- Clase para ajustar propiedades del titulo y parrafo -->
+                <div class="flex-title2">
+                    <h2>Get early access today</h2>
+                    <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
+                </div>
+                <div class="container5-item1">
+                    <!-- Clase NUEVA ITEM2 para dar flex y personalizar div de botones del formulario -->
+                    <div class="container5-item2">
+                        <label class="flex-label" for=""></label>
+                        <!-- Clase para personalizar Input -->
+                        <input class="stylePlaceHolder" type="email" placeholder="email@example.com">
+                    </div>
+                    <div class="container5-item2">
+                        <!-- Clase para asignar atributos al boton del submit -->
+                        <button class="styleButtonSubmit">Get Started For Free</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
     
     <!-- AQUI VA EL FOOTER -->

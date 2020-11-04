@@ -13,6 +13,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 0;
 }
 
 /*Elimina los bullets y da espacio de 10px en la lista*/
@@ -28,7 +29,6 @@ nav div ul li a {
 
 /*Clase para CENTRAR el bloque de imagen contexto H1, danda Espaciado 20px alrededor*/
 .main-inlineflex {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -36,10 +36,15 @@ nav div ul li a {
     padding: 20px;
 }
 
-/*Clase para colocar en COLUMNA bloque con imagen y headlight, y centrar todo respecto su contenedor.*/
+/*Etiqueta para controlar el tamaño de la imegen*/
+header div div img {
+    width: 100%;
+}
+
+/*Clase para colocar en COLUMNA bloque con imagen y headlight y centrar todo respecto su contenedor.*/
 .div-salesleyend {
-    border: 1px solid purple;
-    width: 60%;
+    /*border: 1px solid purple;*/
+    width: 100%;
     padding: 15px;
     padding-top: 10px;
     padding-top: 10px;
@@ -49,14 +54,14 @@ nav div ul li a {
 
     /*Etiqueta para personalizar el Headlight H1 en Encabezado*/
     h1 {
-        font-size: 53px;
+        font-size: 150%;
         color: $neutral-white;
         text-align: center;
         padding-bottom: 15px;
     }
     /*Esta etiqueta personaliza el texto del parrafo en el Encabezado*/
      p {
-         font-size: 14px;
+         font-size: 90%;
          font-weight: normal;
          padding-bottom: 15px;
          text-align: center;
